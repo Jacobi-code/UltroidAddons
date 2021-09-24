@@ -46,10 +46,10 @@ async def _(event):
         sun_set_time = int(response_api["sys"]["sunset"]) + country_time_zone
         await eris.edit(
             """**Weather for {}**\n
-• **Temperature :** {}°С
-    •  __minimium__ : {}°С
-    •  __maximum__ : {}°С
-    •  __feels like__ :{}°C \n
+• **Temperature :** {}°F
+    •  __minimium__ : {}°F
+    •  __maximum__ : {}°F
+    •  __feels like__ :{}°F \n
 • **Humidity :** {}%
 • **Wind Speed :** {}m/s
 • **Clouds :** {} hpa
