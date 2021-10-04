@@ -25,7 +25,7 @@ async def _(event):
         return
     eris = await eor(event, "`Processing...`")
     url = "https://api.openweathermap.org"
-    sample_url = "https://api.openweathermap.org/data/2.5/weather?q={}&APPID={}&units=metric"
+    sample_url = "https://api.openweathermap.org/data/2.5/weather?q={}&APPID={}&units=imperial"
     x = Redis("OPENWEATHER_API")
     if x == None:
         error = f"No API found. Get One from [Here]({url}) \n"
